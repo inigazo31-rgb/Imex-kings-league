@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMEX League — Kings League IMEX</title>
+  <meta name="description" content="Plataforma oficial de la Kings League IMEX: partidos, clasificación, clubes, mercado de fichajes, Fantasy y tarjetas de jugador.">
+  <meta name="theme-color" content="#0c0f0d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%230c0f0d'/%3E%3Cpath d='M24 7 39 12v12c0 8-6 14-15 18-9-4-15-10-15-18V12L24 7Z' fill='%23c9f24a'/%3E%3Cpath d='M16 31V18h4l4 6 4-6h4v13h-4v-7l-4 6-4-6v7h-4Z' fill='%230c0f0d'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/views.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js" defer=""></script>
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div id="boot" class="boot" role="status" aria-live="polite">
+    <div class="boot__mark" aria-hidden="true">
+      <svg viewBox="0 0 48 48" width="48" height="48"><path d="M24 3 43 10v14c0 10-8 17-19 21C13 41 5 34 5 24V10L24 3Z" fill="currentColor"></path><path d="M15 31V17h4.4L24 25l4.6-8H33v14h-4.2v-7.4L24 31l-4.8-7.4V31H15Z" fill="#0c0f0d"></path></svg>
+    </div>
+    <p class="boot__title">IMEX LEAGUE</p>
+    <p class="boot__copy">Preparando la jornada…</p>
+  </div>
+
+  <div id="app" class="app" hidden="">
+    
+    <main id="view" class="view" data-od-id="app-view" style="transform: translate(26px, 5px);"></main>
+    <footer id="siteFooter" class="site-footer" data-od-id="site-footer" style="transform: translate(25px, -76px);"></footer>
+    <nav id="mobileNav" class="mobile-nav" aria-label="Navegación principal móvil" data-od-id="mobile-nav"></nav>
+  </div>
+
+  <div id="sheetRoot"></div>
+  <div id="modalRoot"></div>
+  <div id="toastRoot" class="toast-stack" aria-live="polite" aria-atomic="false"></div>
+
+  <script type="module" src="js/app.js"></script>
+
+
+</body></html>
